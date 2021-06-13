@@ -1,0 +1,5 @@
+--exchange GBP
+--sort date
+--effective
+--real
+--file ~/personal/ledger/main.hledger
