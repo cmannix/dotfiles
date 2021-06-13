@@ -29,12 +29,11 @@ alias gls="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgr
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
 alias gunwip='git log -n 1 | grep -q -c "\-\-wip\-\-" && git reset HEAD~1'
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium
-
-# jenv
-
-if which jenv > /dev/null; 
-	then eval "$(jenv init -)"; 
-fi
+alias gundo='git revert --no-edit'
+alias gfix='code `git diff --name-only | uniq`'
+alias grbc='git rebase --continue'
+alias grbs='git rebase --skip'
+alias grecent="git reflog | egrep -io \"moving from ([^[:space:]]+)\" | awk '{ print $3 }' | awk ' !x[$0]++' | egrep -v '^[a-f0-9]{40}$' | head -n5"
 
 mkcd ()
 {
