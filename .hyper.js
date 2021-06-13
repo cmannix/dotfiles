@@ -5,7 +5,7 @@
 module.exports = {
   config: {
     verminal: {
-      fontFamily: '"FiraCode Nerd Font"',
+      fontFamily: '"Fira Code"',
       fontSize: 14
     },
     // choose either `'stable'` for receiving highly polished,
@@ -107,7 +107,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '/usr/local/bin/zsh',
+    shell: '/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
